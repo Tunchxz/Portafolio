@@ -1,6 +1,8 @@
 import { Briefcase, Code, User } from "lucide-react"
 
 export const AboutSection = () => {
+  const cvFile = "https://www.dropbox.com/scl/fi/knsu285nwkppqp7nz6yp6/cv.pdf?rlkey=beax4gyp7qtf1zncgj5gs9feo&st=x7ykqie3&dl=0"
+
   return (
     <section id="about" className="py-24 px-4 relative">
       {" "}
@@ -34,7 +36,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="public/miCV.pdf"
+                href={cvFile}
+                target="_blank"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Descargar CV
