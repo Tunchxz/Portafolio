@@ -14,7 +14,7 @@ export const ContactSection = () => {
   const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const instagramURL = "https://www.instagram.com/tunchxz?igsh=MTRqcjE5cGdlbXhzbg%3D%3D&utm_source=qr"
-  const linkedInURL = "https://www.linkedin.com/in/cristian-túnchez-75aa772b6"
+  const linkedInURL = "https://www.linkedin.com/in/sebas-tunchez/"
 
   const handleSubmit = (e) => {
     e.preventDefault()

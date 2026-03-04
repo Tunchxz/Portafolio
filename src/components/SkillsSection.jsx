@@ -7,17 +7,19 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaDocker,
-  FaFigma
+  FaFigma,
+  FaLinux
 } from "react-icons/fa"
 import {
-  SiSvelte,
   SiTailwindcss,
   SiVite,
   SiFastapi,
   SiPostgresql,
   SiJira,
   SiVitest,
-  SiStorybook
+  SiStorybook,
+  SiGithubactions,
+  SiPostman
 } from "react-icons/si"
 import { BiLogoVisualStudio } from "react-icons/bi"
 
@@ -26,24 +28,27 @@ const skills = [
   { name: "HTML/CSS", category: "frontend", icon: FaHtml5 },
   { name: "JavaScript", category: "frontend", icon: FaJs },
   { name: "React", category: "frontend", icon: FaReact },
-  { name: "Svelte", category: "frontend", icon: SiSvelte },
   { name: "Tailwind CSS", category: "frontend", icon: SiTailwindcss },
   { name: "Vite", category: "frontend", icon: SiVite },
   { name: "Vitest", category: "frontend", icon: SiVitest },
   { name: "StoryBook", category: "frontend", icon: SiStorybook },
+  { name: "Figma", category: "frontend", icon: FaFigma },
   // Backend
   { name: "Node.js", category: "backend", icon: FaNodeJs },
   { name: "FastAPI", category: "backend", icon: SiFastapi },
   { name: "PostgreSQL", category: "backend", icon: SiPostgresql },
+  { name: "Postman", category: "backend", icon: SiPostman },
+  // DevOps
+  { name: "Linux", category: "devops", icon: FaLinux },
+  { name: "Git/GitHub", category: "devops", icon: FaGitAlt },
+  { name: "GitHub Actions", category: "devops", icon: SiGithubactions },
+  { name: "Docker & Compose", category: "devops", icon: FaDocker },
   // Herramientas
-  { name: "Git/GitHub", category: "tools", icon: FaGitAlt },
-  { name: "Docker & Compose", category: "tools", icon: FaDocker },
-  { name: "Figma", category: "tools", icon: FaFigma },
   { name: "VS Code", category: "tools", icon: BiLogoVisualStudio },
   { name: "Jira", category: "tools", icon: SiJira },
 ]
 
-const categories = ["todas", "frontend", "backend", "tools"]
+const categories = ["todas", "frontend", "backend", "devops", "tools"]
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("todas")
@@ -75,9 +80,11 @@ export const SkillsSection = () => {
                 ? "Frontend"
                 : category === "backend"
                   ? "Backend"
-                  : category === "tools"
-                    ? "Herramientas"
-                    : "Todas"}
+                  : category === "devops"
+                    ? "DevOps"
+                    : category === "tools"
+                      ? "Herramientas"
+                      : "Todas"}
             </button>
           ))}
         </div>

@@ -1,7 +1,7 @@
-import { Briefcase, Code, User } from "lucide-react"
+import { Briefcase, Code, Layers } from "lucide-react"
 
 export const AboutSection = () => {
-  const cvFile = "https://www.dropbox.com/scl/fi/knsu285nwkppqp7nz6yp6/cv.pdf?rlkey=beax4gyp7qtf1zncgj5gs9feo&st=x7ykqie3&dl=0"
+  const cvFile = "https://www.dropbox.com/scl/fi/aq5zoxbpx55vb42vqn6ig/Sebastian-T-nchez.pdf?rlkey=7r45c33g12bzum214p7dxjgdz&st=6ouyeoc9&dl=0"
 
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -18,14 +18,13 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              Soy estudiante de tercer año de la carrera Ciencias de la Computación y Tecnologías de la Información.
-              Me apasiona el desarrollo web moderno y disfruto creando interfaces funcionales, accesibles y
-              visualmente agradables.
+              Soy estudiante de cuarto año de la carrera Ciencias de la Computación y Tecnologías de la Información.
+              Me apasiona el desarrollo backend, DevOps y diseño de arquitecturas de software de alto rendimiento.
             </p>
 
             <p className="text-muted-foreground">
-              A lo largo de este año he trabajado en diversos proyectos académicos donde he aplicado tecnologías
-              como <strong>React, Svelte, FastAPI, Node.js, PostgreSQL, Docker</strong>, entre otras. Siempre
+              A lo largo de mi trayectoria estudiantil he trabajado en diversos proyectos académicos donde he aplicado tecnologías
+              como <strong>React, Svelte, FastAPI, Node.js, PostgreSQL, Docker</strong>, entre otras... Siempre
               estoy buscando aprender nuevas herramientas y metodologías que me permitan mejorar como desarrollador.
             </p>
 
@@ -54,7 +53,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Desarrollo Web</h4>
                   <p className="text-muted-foreground">
-                    Construcción de aplicaciones web responsive usando tecnologías y frameworks modernos.
+                    Me centro en la construcción de aplicaciones web usando tecnologías y frameworks modernos.
                   </p>
                 </div>
               </div>
@@ -62,13 +61,12 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Layers className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Diseño UI/UX</h4>
+                  <h4 className="font-semibold text-lg">Diseño de Arquitectura</h4>
                   <p className="text-muted-foreground">
-                    Diseño de interfaces centradas en el usuario, aplicando principios
-                    de usabilidad y accesibilidad con herramientas como Figma.
+                    Me gusta enfocarme en el diseño y planeación de arquitecturas de software.
                   </p>
                 </div>
               </div>
@@ -82,8 +80,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Colaboración en Proyectos</h4>
                   <p className="text-muted-foreground">
-                    Participación en equipos multidisciplinarios usando herramientas
-                    como Git, Docker, y Jira bajo metodologías ágiles.
+                    Tengo experiencia participando en equipos multidisciplinarios utilizando herramientas
+                    como Git y Jira bajo metodologías ágiles.
                   </p>
                 </div>
               </div>

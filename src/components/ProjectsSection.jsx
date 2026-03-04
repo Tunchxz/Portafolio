@@ -1,35 +1,35 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react"
+import { ArrowRight, Github } from "lucide-react"
 
 const projects = [
   {
     id: 1,
-    title: "Sistema de Renta de Vehículos",
+    title: "Sistema de Gestión para Alquiler de Vehículos",
     description:
-      "Aplicación CRUD completa para gestionar clientes, vehículos y reservas. Incluye un dashboard y paneles administrativos.",
+      "Aplicación web full-stack para la gestión operativa y análisis de datos de una empresa de alquiler de vehículos.",
     image: "/projects/renta_carros.png",
-    tags: ["React", "FastAPI", "Postgres", "Docker"],
+    tags: ["Python", "FastAPI", "PostgreSQL", "React", "Docker"],
     demoUrl: "#",
-    githubUrl: "https://github.com/Tunchxz/Proyecto-4-CC3088.git",
+    githubUrl: "https://github.com/Tunchxz/Proyecto-4-CC3088",
   },
   {
     id: 2,
-    title: "App de Reportería Interactiva",
+    title: "Sistema de Reportería Interactiva",
     description:
       "Sistema de reportería con filtros avanzados y exportación CSV. Visualiza datos dinámicos organizados por criterios clave.",
     image: "/projects/reporteria.png",
-    tags: ["Svelte", "Go", "Postgres", "Docker"],
+    tags: ["Svelte", "Go", "PostgreSQL", "Docker"],
     demoUrl: "#",
-    githubUrl: "https://github.com/Tunchxz/Proyecto-3-CC3088.git",
+    githubUrl: "https://github.com/Tunchxz/Proyecto-3-CC3088",
   },
   {
     id: 3,
-    title: "Calculadora Web",
+    title: "Sistema de Gestión para Academia Musical",
     description:
-      "Calculadora funcional desarrollada con enfoque en diseño por componentes, pruebas y buenas prácticas de ingeniería frontend.",
-    image: "/projects/calculadora.png",
-    tags: ["React", "Vite", "TailwindCSS", "Bun", "Vitest", "StoryBook"],
+      "Backend de plataforma académica para gestión de usuarios, pagos y reservas, con enfoque en seguridad, control de acceso y consistencia operativa.",
+    image: "/projects/EMA.png",
+    tags: ["Node.js", "Express", "PostgreSQL", "Bun", "Docker", "GitHub Actions"],
     demoUrl: "#",
-    githubUrl: "https://github.com/Tunchxz/Proyecto-1-CC3062.git",
+    githubUrl: "https://github.com/lin231135/EMA-backend/tree/Sprint7",
   },
 ]
 
@@ -43,11 +43,11 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Aquí hay algunos de mis proyectos recientes. Cada proyecto fue elaborado con dedicación,
+          Aquí hay algunos de mis proyectos. Cada proyecto fue elaborado con dedicación,
           prestando atención al detalle, al rendimiento y a la experiencia del usuario.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {projects.map((project, key) => (
             <div
               key={key}
@@ -76,13 +76,13 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
+                    {/*<a
                       href={project.demoUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
-                    </a>
+                    </a>*/}
                     <a
                       href={project.githubUrl}
                       target="_blank"
